@@ -1,0 +1,6 @@
+= test
+Which of README or README.rdoc is preferred by Github?
+
+== Title - level2
+
+=== Title - level3
