@@ -10,8 +10,11 @@ class VectorTest < Test::Unit::TestCase
   end
 
   def test_magnitude
-    v = DP::Vector.new(2, 3)
-    assert_equal(Math.sqrt(13), v.magnitude)
+    v1 = DP::Vector.new(2, 3)
+    assert_equal(Math.sqrt(13), v1.magnitude)
+
+    v2 = DP::Vector.new(0, 0)
+    assert_equal(0, v2.magnitude)
   end
 
 end
