@@ -13,15 +13,16 @@ module DP
       @output[@original_points[0]] = true
       @output[@original_points[@original_points.length - 1]] = true
 
-      douglas_peucker(0, @original_points.length - 1)
+      douglas_peucker(0, @original_points.length - 1, 0)
 
       return @original_points.select do |elem|
         @output[elem]
       end
     end
 
-    def douglas_peucker(start_vertex_index, end_vertex_index)
-      return if end_vertex_index < (start_vertex_index + 1) # nothing to do.
+    def douglas_peucker(start_vertex_index, end_vertex_index, depth)
+      puts "douglas(#{start_vertex_index}, #{end_vertex_index})"
+      return if end_vertex_index <= (start_vertex_index + 1) # nothing to do.
 
       # make line from start to end
       line = DP::Line.new(@original_points[start_vertex_index], @original_points[end_vertex_index])
@@ -43,8 +44,11 @@ module DP
         @output[max_point] = true
         # split the polyline at the farthest vertex
         index = @original_points.index(max_point)
-        douglas_peucker(start_vertex_index, index)
-        douglas_peucker(index, end_vertex_index)        
+	puts "#{depth} part 1"
+        douglas_peucker(start_vertex_index, index, depth+1)
+	puts "#{depth} part 2"
+        douglas_peucker(index, end_vertex_index, depth+1)        
+	puts "---"
       end
     end
   end
