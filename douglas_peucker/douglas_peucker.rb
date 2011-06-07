@@ -42,9 +42,9 @@ module DP
         # keep this point for output
         @output[max_point] = true
         # split the polyline at the farthest vertex
-	index = @original_points.index(max_point)
-	douglas_peucker(start_vertex_index, index)
-	douglas_peucker(index, end_vertex_index)        
+        index = @original_points.index(max_point)
+        douglas_peucker(start_vertex_index, index)
+        douglas_peucker(index, end_vertex_index)        
       end
     end
   end
