@@ -3,8 +3,16 @@ Which of README or README.rdoc is preferred by Github? README.rdoc supercedes RE
 
 == Title - level2
 
+file.rb -- __FILE__ and File.dirname()
+dir.rb -- Dir module.
+
 === Title - level3
 
 ==== level4
 
 ===== level5
+
+  # comment
+  require 'rubygems'
+
+hello world.
