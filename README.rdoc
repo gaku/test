@@ -2,6 +2,7 @@
 Which of README or README.rdoc is preferred by Github? README.rdoc supercedes README.
 
 == Title - level2
+New line doesn't mean anything for RDoc.
 
 file.rb -- __FILE__ and File.dirname()
 dir.rb -- Dir module.
@@ -11,6 +12,7 @@ dir.rb -- Dir module.
 ==== level4
 
 ===== level5
+Two space indent turns a paragraph to a code sample.
 
   # comment
   require 'rubygems'
