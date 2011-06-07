@@ -10,5 +10,10 @@ module DP
     def to_s
       "(#{x},#{y})"
     end
+
+    def ==(other)
+      return true if @x == other.x and @y == other.y
+      return false
+    end
   end
 end
