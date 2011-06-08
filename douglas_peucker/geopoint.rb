@@ -4,11 +4,11 @@ module GPX
   class GeoPoint < DP::Point
     alias :lat :y
     alias :lat= :y=
-    alias :lng :x
-    alias :lng= :x=
+    alias :lon :x
+    alias :lon= :x=
     
-    def initialize(lat, lng)
-      super(lng, lat)
+    def initialize(lat, lon)
+      super(lon, lat)
     end
   end
 end
