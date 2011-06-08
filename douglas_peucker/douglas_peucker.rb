@@ -23,7 +23,7 @@ module DP
     end
 
     def douglas_peucker(start_vertex_index, end_vertex_index, depth)
-      puts "[#{depth}] douglas_peucker(#{start_vertex_index}, #{end_vertex_index})"
+      # puts "[#{depth}] douglas_peucker(#{start_vertex_index}, #{end_vertex_index})"
       return if end_vertex_index <= (start_vertex_index + 1) # nothing to do.
 
       # make line from start to end
@@ -46,7 +46,7 @@ module DP
         # keep this point for output
         @output[max_point_index] = true
         # split the polyline at the farthest vertex
-	puts "add #{max_point_index}"
+	# puts "add #{max_point_index}"
 
         douglas_peucker(start_vertex_index, max_point_index, depth+1)
         douglas_peucker(max_point_index, end_vertex_index, depth+1)
