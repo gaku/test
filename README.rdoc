@@ -9,7 +9,7 @@ dir.rb -- Dir module.
 
 === Title - level3
 
-With plus symbols: +hello world+.  With tt tag <tt>hello world</tt>
+With plus symbols: +hello world+(doesn't work!).  With tt tag <tt>hello world</tt> (works!)
 
 ==== level4
 
