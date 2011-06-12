@@ -1,7 +1,9 @@
-= test
-Which of README or README.rdoc is preferred by Github? README.rdoc supercedes README.
+= Gaku's sandbox
 
-== Title - level2
+== README vs. README.rdoc precedance
+README.rdoc is preferred by Github over README.
+
+== Formatting
 New line doesn't mean anything for RDoc.
 
 file.rb -- __FILE__ and File.dirname()
