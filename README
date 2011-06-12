@@ -2,5 +2,6 @@ file.rb -- __FILE__ and File.dirname()
 dir.rb -- Dir module.
 -- master's change --(manually merged)
 --modified in ex1 branch, want to be in master--(manually merged)
+-- another modification in ex1 after a merge --(another manual merge)
 
 
