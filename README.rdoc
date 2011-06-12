@@ -1,7 +1,7 @@
 = Gaku's sandbox
 
 == README vs. README.rdoc precedance
-README.rdoc is preferred by Github over README.
+<tt>README.rdoc</tt> is preferred by Github over <tt>README</tt>.
 
 == Formatting
 New line doesn't mean anything for RDoc.
