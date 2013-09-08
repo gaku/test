@@ -19,9 +19,14 @@ def block_test4(&block)
   block.call("1", "2")
 end
 
+def block_test5(arg1="default")
+  yield arg1
+end
+
 
 block_test1 { puts "test1's block" }
 block_test2("test2 arg2") { puts "test2's block" }
 block_test3("test3 arg1") { puts "test3's block" }
 block_test4 { |x| puts x }
 block_test4 { |x,y,z| puts "x=#{x},y=#{y},z=#{z}" }
+block_test5 { |x| puts "test5's block: #{x}" }
